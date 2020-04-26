@@ -166,7 +166,7 @@ module.exports.contains = contains;
  * 
  * @param {Array or Object} collection: The collection over which to iterate.
  * 
- * @param {Function} action: The Function to be applied to each value in the collection
+ * @param {Function} method: The Function to be applied to each value in the collection
  * 
  */
 function each(collection, method) {
@@ -206,7 +206,7 @@ module.exports.unique = unique;
  *
  * @param {Array} array: any array value
  * 
- * @param {Function} action: The function to be applied to the arguments from the array
+ * @param {Function} method: The function to be applied to the arguments from the array
  * 
  * @return {Array} array: an array with all the elements for which calling the function returned true
  * 
@@ -231,7 +231,7 @@ module.exports.filter = filter;
  * 
  * @param: {Array} array: any array value
  * 
- * @param: {Function} action: The function to be applied to the arguments from the array
+ * @param: {Function} method: The function to be applied to the arguments from the array
  * 
  * @return {Array} array: An array with all the elements for which calling the function returned false
  * 
@@ -259,7 +259,7 @@ module.exports.reject = reject;
  * 
  * @param {Array} array: any array value
  * 
- * @param {Function} action: The function to be applied to the arguements from the array
+ * @param {Function} method: The function to be applied to the arguements from the array
  * 
  * @return {Array} array: an array with two sub arrays: one containing the truthy returns and one containing the falsy returns
  * 
@@ -281,7 +281,7 @@ module.exports.partition = partition;
  *
  * @param {Array or Object} collection: can be any array or object. 
  * 
- * @param (Function) action: The function to be applied to arguments generated from collection
+ * @param (Function) method: The function to be applied to arguments generated from collection
  * 
  * @return {Array} array: an array with the return values of all the function calls
  * 
@@ -310,7 +310,7 @@ module.exports.map = map;
  * 
  * @param {Array} array: an array containing multiple objects
  * 
- * @param {Value} property: a value that will be searched for a property of the objects within the array
+ * @param {Value} property: a string value that will be searched for a property of the objects within the array
  * 
  * @return {Array} array: an array containing the given property values
  * 
@@ -335,7 +335,7 @@ module.exports.pluck = pluck;
  * 
  * @param {Array or Object} collection: any array or object
  * 
- * @param {Function} action: The function to be applied to the arguments generated from the collection.
+ * @param {Function} method: The function to be applied to the arguments generated from the collection.
  * 
  * @return {Value}: boolean: returns true or false based on the conditions.
  * 
@@ -377,7 +377,7 @@ module.exports.every = every;
  * 
  * @param {Array or Object} collection: any array or object
  * 
- * @param {Function} action: any function that will applied to the arguments generated from the collection
+ * @param {Function} method: any function that will applied to the arguments generated from the collection
  * 
  * @return {Value} boolean: returns true or false based on the conditions. 
  * 
@@ -419,7 +419,7 @@ module.exports.some = some;
  * 
  * @param {Array} array: any array value. 
  * 
- * @param {Function} action: any function that will be applied to the arguments generated from the given array and seed. 
+ * @param {Function} method: any function that will be applied to the arguments generated from the given array and seed. 
  * 
  * @seed {Value} value: any given value. 
  * 
