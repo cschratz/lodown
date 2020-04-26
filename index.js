@@ -310,7 +310,7 @@ module.exports.map = map;
  * 
  * @param {Array} array: an array containing multiple objects
  * 
- * @param {Value} property: a string value that will be searched for a property of the objects within the array
+ * @param {String} property: a string value that will be searched for a property of the objects within the array
  * 
  * @return {Array} array: an array containing the given property values
  * 
